@@ -77,7 +77,6 @@ class ProfessionalPortfolioScreen extends HookConsumerWidget {
 
     final borderWidth = Tween<double>(begin: 1, end: 3).animate(mainController);
 
-    
     final bgGradientRotation = Tween<double>(
       begin: 0,
       end: 2 * 3.14159,
@@ -97,7 +96,6 @@ class ProfessionalPortfolioScreen extends HookConsumerWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Animated background gradient
           AnimatedBuilder(
             animation: bgController,
             builder: (context, child) {
@@ -109,8 +107,8 @@ class ProfessionalPortfolioScreen extends HookConsumerWidget {
                       center: Alignment.center,
                       radius: 1.5,
                       colors: [
-                        theme.colorScheme.primary.withAlpha(40),
-                        theme.colorScheme.secondary.withAlpha(50),
+                        theme.colorScheme.primary.withAlpha(30),
+                        theme.colorScheme.secondary.withAlpha(20),
                         Colors.transparent,
                       ],
                       stops: const [0.1, 0.5, 1.0],
